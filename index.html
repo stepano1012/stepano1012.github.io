@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- EDIT: 브라우저 탭 제목과 검색 설명 -->
-  <title>Your Name — Research & Ideas</title>
+  <title>Hojun Lim — Research & Ideas</title>
   <meta name="description" content="A personal portfolio for research, projects, and publications.">
   <style>
     /* 꾸미기 설정: 아래 색상을 바꾸면 전체 분위기를 조절할 수 있습니다. */
@@ -59,26 +59,38 @@ body{background:var(--paper)}header{background:rgba(9,14,28,.82);backdrop-filter
 @media(max-width:700px){.hero{min-height:760px;padding-top:160px;align-items:flex-end}.hero h1{font-size:64px;max-width:350px}.hero p{font-size:17px}.hero:after{background:linear-gradient(0deg,#090e1c 0%,rgba(9,14,28,.7) 45%,transparent 100%)}.wallpaper-controls{right:25px}.wallpaper-controls>span{display:none}.down{font-size:9px}.brand:before{font-size:18px;margin-right:7px}.brand{font-size:17px}.project h3{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.project:hover{transform:none}}
 
+
+.contact{border-top:1px solid var(--line)}
+.contact p{max-width:690px}
+.contact-email{display:inline-block;margin-top:20px;font-size:clamp(20px,3vw,32px);letter-spacing:-.03em;color:var(--accent);text-decoration-thickness:1px;text-underline-offset:8px;overflow-wrap:anywhere}
+.contact-email:hover{color:#e5e8ff}
+.contact-email span{display:inline-block;margin-left:10px}
+@media(max-width:550px){nav{padding:12px 20px;flex-wrap:wrap;gap:5px}.links{width:100%;justify-content:space-between;gap:12px}.links a{font-size:11px}html{scroll-padding-top:115px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#about">Skip to content</a>
 <header><nav aria-label="Main navigation">
   <!-- EDIT: 이름/이니셜 -->
-  <a class="brand" href="#home">Your Name.</a>
-  <div class="links"><a href="#home" aria-current="location">Home</a><a href="#about">About</a><a href="#project">Project</a><a href="#publication">Publication</a></div>
+  <a class="brand" href="#home">Hojun Lim.</a>
+  <div class="links"><a href="#home" aria-current="location">Home</a><a href="#about">About</a><a href="#project">Project</a><a href="#publication">Publication</a><a href="#contact">Contact</a></div>
 </nav></header>
 <main>
   <section class="hero" id="home" aria-labelledby="name">
     <canvas id="galaxy" aria-hidden="true"></canvas>
-    <div class="hero-copy"><span class="eyebrow">Welcome to my corner of the world</span><h1 id="name">Your Name</h1><p>Curious minds. Meaningful questions.<br>One small discovery at a time.</p><a class="button" href="#about">A little about me ↗</a></div>
+    <div class="hero-copy"><span class="eyebrow">Welcome to my corner of the world</span><h1 id="name">Hojun Lim</h1><p>Curious minds. Meaningful questions.<br>One small discovery at a time.</p><a class="button" href="#about">A little about me ↗</a></div>
     <div class="wallpaper-controls"><span>LIVE WALLPAPER · ORBIT 01</span><button type="button" class="motion-toggle" aria-pressed="false">Ⅱ 배경 멈춤</button></div>
     <a href="#about" class="down">SCROLL TO EXPLORE ↓</a>
   </section>
   <!-- 아래 소개, 프로젝트, 논문은 모두 교체용 예시입니다. -->
   <section class="section about" id="about" aria-labelledby="about-title">
     <div><span class="eyebrow">01 / A little introduction</span><h2 id="about-title">About me.</h2></div>
-    <div><p>Hello! I’m <strong>Your Name</strong>, a student and aspiring researcher interested in how data can help us understand the world.</p><p>I enjoy turning interesting questions into thoughtful projects, learning new tools, and sharing what I discover along the way.</p><p>안녕하세요. 이곳에 소속, 관심 분야, 간단한 자기소개를 작성해 주세요. 수업 과제, 연구 활동, 개인 프로젝트 등을 소개할 수 있습니다.</p><div class="tags"><span>Data Science</span><span>Machine Learning</span><span>Creative Projects</span></div></div>
+    <div>
+      <p>Hello! I’m <strong>Hojun Lim</strong>, a master’s student in Statistics and Data Science at Chung-Ang University.</p>
+      <p>My research interests include spatial statistics, extreme value theory, and quantile-based methods.</p>
+      <p>I am particularly interested in working with spatiotemporal data and exploring how statistical methods can help us understand patterns and variation across space and time.</p>
+      <div class="tags"><span>Spatial Statistics</span><span>Extreme Value Theory</span><span>Quantile Methods</span><span>Spatiotemporal Data</span></div>
+    </div>
   </section>
   <div class="projects-wrap"><section class="section" id="project" aria-labelledby="project-title">
     <div class="section-head"><div><span class="eyebrow">02 / Ideas in practice</span><h2 id="project-title">Selected projects.</h2></div><p>A few things I’m exploring, building, and learning from.</p></div>
@@ -91,10 +103,16 @@ body{background:var(--paper)}header{background:rgba(9,14,28,.82);backdrop-filter
   <section class="section" id="publication" aria-labelledby="pub-title">
     <span class="eyebrow">03 / Writing & research</span><h2 id="pub-title">Publications.</h2><p>Research papers, reports, and other things I’ve written.</p>
     <p class="note">아래 항목은 형식을 보여주기 위한 가상 예시입니다. 논문이 없으면 수업 보고서나 발표 자료를 적어도 됩니다.</p>
-    <ol class="publications"><li><span class="year">2026</span><div><h3>Your research paper or project report title</h3><p><strong>Your Name</strong>, Coauthor Name</p><p>Journal / Conference / Course report · Example entry</p></div></li><li><span class="year">2025</span><div><h3>Another piece of writing you would like to share</h3><p><strong>Your Name</strong></p><p>Presentation / Technical report · Example entry</p></div></li></ol>
+    <ol class="publications"><li><span class="year">2026</span><div><h3>Your research paper or project report title</h3><p><strong>Hojun Lim</strong>, Coauthor Name</p><p>Journal / Conference / Course report · Example entry</p></div></li><li><span class="year">2025</span><div><h3>Another piece of writing you would like to share</h3><p><strong>Hojun Lim</strong></p><p>Presentation / Technical report · Example entry</p></div></li></ol>
+  </section>
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <span class="eyebrow">04 / Get in touch</span>
+    <h2 id="contact-title">Contact.</h2>
+    <p>I’d love to connect and exchange ideas on a wide range of research topics. If you’d like to discuss an interesting question, share your work, or explore potential collaborations, please feel free to get in touch.</p>
+    <a class="contact-email" href="mailto:stepano1012@cau.ac.kr">stepano1012@cau.ac.kr <span aria-hidden="true">↗</span></a>
   </section>
 </main>
-<footer><div class="footer-inner"><p>© <span id="year">2026</span> Your Name · Personal portfolio</p><a href="#home">Back to top ↑</a></div></footer>
+<footer><div class="footer-inner"><p>© <span id="year">2026</span> Hojun Lim · Personal portfolio</p><a href="#home">Back to top ↑</a></div></footer>
 <script>
   document.getElementById('year').textContent=new Date().getFullYear();
   const links=[...document.querySelectorAll('.links a')];
